@@ -1,27 +1,27 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div>
-    <div className='cotainer-fluid bg-dark'>
-        <nav className='container navbar navbar-expand navbar-dark text-light justify-content-between'>
-            <div>
-                <h2 className=''>WeSpeak</h2>
-            </div>
+      <div className="container-fluid bg-dark">
+        <nav className="container navbar navbar-expand navbar-dark text-light justify-content-between">
+          <div>
+            <h2>WeSpeak</h2>
+          </div>
 
-            <div className="navbar-nav nav-underline">
-                <a href="" className="nav-link">Home</a>
-                <a href="" className="nav-link">Dashoard</a>
-            </div>
+          <div className="navbar-nav">
+            <Link to="/" className="nav-link">Home</Link> {/* Link to home route */}
+            <Link to="/dashboard" className="nav-link">Dashboard</Link> {/* Link to dashboard route */}
+          </div>
 
-            <div>
-                <button className='btn btn-primary'>Connect To MetaMask</button>
-            </div>
+          <div>
+            <button className="btn btn-primary">Connect To MetaMask</button>
+          </div>
         </nav>
-
+      </div>
     </div>
-</div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
