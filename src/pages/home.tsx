@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 // import TopicList from "../components/TopicList"; // Import TopicList
 
 const Home: React.FC = () => {
